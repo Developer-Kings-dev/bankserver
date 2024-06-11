@@ -164,7 +164,7 @@ mongoose.connect(dBuri)
     }
   });
   
- 
+  // Transfer: Account to Account
   app.post('/banks/transfer', async (req, res) => {
     const { fromAccountId, toAccountId, amount } = req.body;
     try {
