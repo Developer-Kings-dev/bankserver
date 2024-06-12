@@ -61,7 +61,7 @@ app.post('/banks/', async (req, res) => {
     }
 
     // Generate unique account number
-    const accountNumber = uuidv4().replace(/-/g, '').slice(0, 10); // 10 character unique account number
+    const accountNumber = uuidv4().replace(/-/g, '').slice(0, 10); 
 
     const newAccount = new Account({ accountNumber, firstName, lastName });
     await newAccount.save();
